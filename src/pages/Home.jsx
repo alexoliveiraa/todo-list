@@ -1,8 +1,8 @@
 import { Container, List } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Form from "../componentes/Form";
 import Todoitem from "../componentes/Todoitem";
-import { Key } from "@mui/icons-material";
+
 
 export default function Home() {
   
@@ -20,7 +20,7 @@ export default function Home() {
     var todosArray = [...todos];
 
     for (var i in todosArray) {
-        if (todosArray[i].id == id) {
+        if (todosArray[i].id === id) {
             todosArray[i].text = editedText;
         }
     }
